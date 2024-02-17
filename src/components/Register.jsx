@@ -14,7 +14,7 @@ function Register() {
 const handleSubmit = async (e) => {
    e.preventDefault();
    console.log(credentials);
-  const response = await fetch('http://localhost:3001/register', {
+  const response = await fetch('http://localhost:3001/api/register', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json'
@@ -26,7 +26,7 @@ const handleSubmit = async (e) => {
   console.log(json);
   if (!json.success) {
       console.log("error")
-      alert(json.errors);
+      alert(json.error);
       //save the auth toke to local storage and redirect
       //   localStorage.setItem('token', json.authToken)
       //   navigate("/login")
