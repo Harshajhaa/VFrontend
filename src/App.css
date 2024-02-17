@@ -1,0 +1,31 @@
+video{
+  z-index: 0;
+  position: absolute;
+  overflow: hidden;
+}
+.video-body{
+  position: absolute;
+  left:0;
+  right:0;
+  overflow: hidden;
+}
+
+
+.login{
+  position: absolute;
+  z-index: 2;
+  margin-left: 35%;
+}
+.register{
+  position: absolute;
+  z-index: 2;
+  margin-left: 35%;
+}
+.inside
+{
+  width: 20rem;
+}
+.header{
+  background-color: aqua;
+  
+}
