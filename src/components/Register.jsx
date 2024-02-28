@@ -1,9 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react';
 
 function Register() {
 
+
+  let navigate = useNavigate();
   const [credentials, setCredentials] = useState({
     fullname: '',
     email: '',
@@ -35,6 +37,7 @@ function Register() {
       //   navigate("/login")
     } else {
       alert('User created successfully');
+      navigate( '../login');
 
     }
   };
