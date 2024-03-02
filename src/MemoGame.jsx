@@ -7,14 +7,42 @@ import Timer from './components/Timer'
 
 
 const cardImages = [
-  {"src" : "/img/helmet-1.png", matched: false},
-  {"src" : "/img/potion-1.png", matched: false},
-  {"src" : "/img/ring-1.png", matched: false},
-  {"src" : "/img/scroll-1.png", matched: false},
-  {"src" : "/img/shield-1.png", matched: false},
-  {"src" : "/img/sword-1.png", matched: false}
+  {"src" : "/img/img1.png", matched: false},
+  {"src" : "/img/img2.png", matched: false},
+  {"src" : "/img/img3.png", matched: false},
+  {"src" : "/img/img4.png", matched: false},
+  {"src" : "/img/img5.png", matched: false},
+  {"src" : "/img/img6.png", matched: false},
+  {"src" : "/img/img7.png", matched: false},
+  {"src" : "/img/img8.png", matched: false},
+  {"src" : "/img/img9.png", matched: false},
+  {"src" : "/img/img10.png", matched: false},
+  {"src" : "/img/img11.png", matched: false},
+  {"src" : "/img/img12.png", matched: false},
+  {"src" : "/img/img13.png", matched: false},
+  {"src" : "/img/img14.png", matched: false},
+  {"src" : "/img/img15.png", matched: false},
+  {"src" : "/img/img16.png", matched: false},
+  {"src" : "/img/img17.png", matched: false},
+  {"src" : "/img/img18.png", matched: false},
+  {"src" : "/img/img19.png", matched: false},
+  {"src" : "/img/img20.png", matched: false},
+  {"src" : "/img/img21.png", matched: false},
+  {"src" : "/img/img22.png", matched: false},
+  {"src" : "/img/img23.png", matched: false},
+  {"src" : "/img/img24.png", matched: false},
+  {"src" : "/img/img25.png", matched: false},
+  {"src" : "/img/img26.png", matched: false},
+  {"src" : "/img/img27.png", matched: false},
+  {"src" : "/img/img28.png", matched: false},
+  {"src" : "/img/img29.png", matched: false},
+  {"src" : "/img/img30.png", matched: false},
+  {"src" : "/img/img31.png", matched: false},
+  {"src" : "/img/img32.png", matched: false},
+  {"src" : "/img/img33.png", matched: false}
+
 ]
-function MemoGame() {
+function MemoGame({level,setLevel}) {
 
   const [cards, setCards] = useState([])
   const [turns, setTurns] = useState(0)
@@ -77,7 +105,7 @@ function MemoGame() {
     <div className='app'>
       
       {/* <button onClick={shuffleCards}>New Game</button> */}
-         <Timer></Timer>
+         <Timer level={level} setLevel={setLevel}></Timer>
       <div className='card-grid'>
         {cards.map(card => (
           <SingleCard
