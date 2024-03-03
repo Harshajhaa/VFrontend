@@ -1,31 +1,98 @@
-video{
+/* :root{
+  background-color: black;
+} */
+
+video {
   z-index: 0;
   position: absolute;
   overflow: hidden;
 }
-.video-body{
+
+.video-body {
   position: absolute;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   overflow: hidden;
 }
 
 
-.login{
+.login {
   position: absolute;
   z-index: 2;
-  margin-left: 35%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.register{
+
+.login1{
+  width: 30rem;
+  height: 30rem;
+}
+
+.login2{
+  font-size: 22px;
+  color: white;
+}
+
+.login3{
+  color: #b5a5da;
+}
+
+.login4{
+  font-size: x-large;
+  color:beige;
+}
+
+.loginh{
+  color: beige;
+}
+
+
+
+.register {
   position: absolute;
   z-index: 2;
-  margin-left: 35%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.inside
-{
+
+.home {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inside {
   width: 20rem;
 }
-.header{
-  background-color: aqua;
-  
+
+.headerButton {
+  width: 100px;
+  height: 50px;
+
 }
+
+.levelstart{
+  font-family: 'Ubuntu',sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  width:24vm;
+  height:7vh;
+  background-color: transparent;
+  color:black;
+  z-index:2;
+  cursor:pointer;
+}
+
+button.levelstart{
+  position:absolute;
+  right:5.75vw;
+  bottom: 10vh;
+}
+
+
+
+

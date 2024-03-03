@@ -101,9 +101,9 @@ function Scramble({ level, setLevel }) {
     };
 
     return (
-
-        <div className="container">
-            <Timer level={level} setLevel={setLevel}></Timer>
+        <>
+        <Timer level={level} setLevel={setLevel}></Timer>
+        <div className="container login">
             <h2>Word Scramble</h2>
             <div className="content">
                 <p className="word">{wordText}</p>
@@ -120,6 +120,7 @@ function Scramble({ level, setLevel }) {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 export default Scramble;

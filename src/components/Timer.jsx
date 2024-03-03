@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 function Timer({level,setLevel}) {
 
-    const [timer, setTimer] = useState(10);
+    const [timer, setTimer] = useState(3);
     
 
   

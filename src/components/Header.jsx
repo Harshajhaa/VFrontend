@@ -1,15 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import '../App.css'
 function Header() {
     return (
         <div className='header'>
             <div className="relative w-full ">
-                <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
-                    <div className="inline-flex items-center space-x-2">
+                <div className=" mx-auto flex max-w-9xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
+                    {/* <div className="inline-flex items-center space-x-2" style={{height: '100px', width: '118px'}}>
                         <span>
                             <svg
-                                width="30"
-                                height="30"
+                                width="10"
+                                height="10"
                                 viewBox="0 0 50 56"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -20,8 +21,8 @@ function Header() {
                                 ></path>
                             </svg>
                         </span>
-                        <span className="font-bold bg-white">DevUI</span>
-                    </div>
+                        <span className=" font-bold text-xl bg-white">Horror Night</span>
+                    </div> */}
                     <div className="hidden grow items-start lg:flex">
                         <ul className="ml-12 inline-flex space-x-8">
 
@@ -33,7 +34,7 @@ function Header() {
                     <Link to="/">
                     <button
                             type="button"
-                            className="bg-white rounded-md bg-transparent px-3 py-2 text-sm font-semibold text-black hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                            className="headerButton text-xl bg-white rounded-md bg-transparent px-3 py-2  font-semibold text-black hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                         >
                             Home
                            
@@ -42,7 +43,7 @@ function Header() {
                         <Link to="/login">
                         <button
                             type="button"
-                            className="bg-white rounded-md bg-transparent px-3 py-2 text-sm font-semibold text-black hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                            className="headerButton text-xl bg-white rounded-md bg-transparent px-3 py-2  font-semibold text-black hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                         >
                               Login    
                         </button>
@@ -50,7 +51,7 @@ function Header() {
                         <Link to="/register">
                         <button
                             type="button"
-                            className="bg-white rounded-md bg-transparent px-3 py-2 text-sm font-semibold text-black hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                            className="headerButton text-xl bg-white rounded-md bg-transparent px-3 py-2 font-semibold text-black hover:bg-black/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
                         >
                             Register
                         </button>

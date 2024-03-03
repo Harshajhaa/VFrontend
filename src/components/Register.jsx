@@ -49,27 +49,27 @@ function Register() {
   return (
     <>
       <section className='register'>
-        <div className="grid grid-cols-1 lg:grid-cols-1">
-          <div className="flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
-            <div className="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md inside">
-              <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl">
+      <div className="flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24 login1">
+          <div className="">
+            <div className="login1">
+              <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl loginh">
                 Register
               </h2>
-              <p className="mt-2 text-base text-gray-600">
+              <p className="mt-2 text-sm text-gray-600 login2">
                 Already have an account?{" "}
                 <Link
                   to="/login"
                   title=""
-                  className="font-medium text-black transition-all duration-200 hover:underline"
+                  className="font-semibold text-black transition-all duration-200 hover:underline login3"
                 >
                   Login
                 </Link>
               </p>
-              <form onSubmit={handleSubmit} className="mt-8">
-                <div className="space-y-5">
+              <form onSubmit={handleSubmit} className="mt-8 ">
+                <div className="space-y-5 login4">
 
                   <div>
-                    <label htmlFor="name" className="text-base font-medium text-gray-900">
+                    <label htmlFor="name" >
                       {" "}
                       Full Name{" "}
                     </label>
@@ -86,7 +86,7 @@ function Register() {
                   </div>
 
                   <div>
-                    <label htmlFor="email" className="text-base font-medium text-gray-900">
+                    <label htmlFor="email" >
                       {" "}
                       Email Id{" "}
                     </label>
@@ -103,7 +103,7 @@ function Register() {
                   </div>
 
                   <div>
-                    <label htmlFor="phonenumber" className="text-base font-medium text-gray-900">
+                    <label htmlFor="phonenumber" >
                       {" "}
                       Phone No.{" "}
                     </label>
@@ -120,7 +120,7 @@ function Register() {
                   </div>
 
                   <div>
-                    <label htmlFor="collegename" className="text-base font-medium text-gray-900">
+                    <label htmlFor="collegename" >
                       {" "}
                       College Name{" "}
                     </label>
@@ -137,7 +137,7 @@ function Register() {
                   </div>
 
                   <div>
-                    <label htmlFor="rollnumber" className="text-base font-medium text-gray-900">
+                    <label htmlFor="rollnumber" >
                       {" "}
                       Roll No.{" "}
                     </label>
@@ -158,7 +158,7 @@ function Register() {
                     <div className="flex items-center justify-between">
                       <label
                         htmlFor="password"
-                        className="text-base font-medium text-gray-900"
+                        
                       >
                         {" "}
                         Password{" "}
@@ -180,7 +180,7 @@ function Register() {
                     <div className="flex items-center justify-between">
                       <label
                         htmlFor="password"
-                        className="text-base font-medium text-gray-900"
+                        
                       >
                         {" "}
                         Confirm Password{" "}

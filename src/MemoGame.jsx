@@ -102,10 +102,12 @@ function MemoGame({level,setLevel}) {
   },[])
 
   return (
+    <>
+    <Timer level={level} setLevel={setLevel}></Timer>
+   
     <div className='app'>
       
       {/* <button onClick={shuffleCards}>New Game</button> */}
-         <Timer level={level} setLevel={setLevel}></Timer>
       <div className='card-grid'>
         {cards.map(card => (
           <SingleCard
@@ -119,6 +121,7 @@ function MemoGame({level,setLevel}) {
       </div>
       <p>Score: {memoScore}</p>
     </div>
+    </>
   )
 }
 
